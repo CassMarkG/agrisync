@@ -59,13 +59,13 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.3, ease }}
           >
             <Link
-              to="/dashboard"
+              to="/login"
               className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold text-sm transition-[box-shadow,transform] hover:shadow-lg hover:shadow-primary/25 active:scale-[0.97]"
             >
               I'm a Farmer
             </Link>
             <Link
-              to="/marketplace"
+              to="/login"
               className="inline-flex items-center px-6 py-3 rounded-lg bg-secondary text-secondary-foreground font-semibold text-sm transition-[box-shadow,transform] hover:shadow-lg hover:shadow-secondary/25 active:scale-[0.97]"
             >
               I'm a Buyer

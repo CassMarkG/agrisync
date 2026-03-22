@@ -3,6 +3,7 @@ import { TrendingUp, TrendingDown, Wheat, AlertTriangle, Users, Target } from "l
 import { crops, nationalMetrics } from "@/lib/cropData";
 import SyncScoreCard from "@/components/SyncScoreCard";
 import DemandSupplyChart from "@/components/DemandSupplyChart";
+import ChatBot from "@/components/ChatBot";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -145,6 +146,7 @@ export default function Dashboard() {
           ))}
         </div>
       </motion.div>
+      <ChatBot />
     </div>
   );
 }

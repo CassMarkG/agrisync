@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { crops, type CropData } from "@/lib/cropData";
+import ChatBot from "@/components/ChatBot";
 
 const categories = ["All", "Grain", "Legume", "Fruit", "Oilseed", "Vegetable"];
 
@@ -126,6 +127,7 @@ export default function Marketplace() {
           <p>No crops match your search.</p>
         </div>
       )}
+      <ChatBot />
     </div>
   );
 }

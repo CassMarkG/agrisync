@@ -17,6 +17,8 @@ import Marketplace from "./pages/Marketplace";
 import MarketplaceCropDetail from "./pages/MarketplaceCropDetail";
 import PriceTrends from "./pages/PriceTrends";
 import MyInterests from "./pages/MyInterests";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +32,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           {/* Platform routes with sidebar layout */}
           <Route element={<AppLayout />}>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/crops" element={<Crops />} />
             <Route path="/crops/:cropName" element={<CropDetail />} />
